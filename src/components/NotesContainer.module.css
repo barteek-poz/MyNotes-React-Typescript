@@ -1,0 +1,6 @@
+.note-container {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    flex-wrap: wrap;
+}

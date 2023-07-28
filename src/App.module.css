@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --light-background: rgb(243, 243, 243);
+    --dark-font: rgb(0, 0, 0);
+    --work-background: rgba(181,146,253,255);
+    --home-background: rgba(141, 224, 85, 0.905);
+    --other-background: rgba(254,201,112,255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--light-background);
+    font-size: 62.5%;
+}
+
+.app-body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Lato', sans-serif;
+    padding: 3rem;
+}
+
