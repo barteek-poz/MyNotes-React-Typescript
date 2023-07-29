@@ -9,14 +9,6 @@ interface SingleNote {
   type: string;
 }
 
-type NotesType =
-  | []
-  | SingleNote[]
-  | ((prevState: SingleNote[]) => SingleNote[])
-  | ((
-      currNote: SingleNote[]
-    ) => { text: string | number; id: number; type: string }[]);
-
 const NotesContainer: React.FC<{}> = () => {
   const ctx = useContext(NotesContext);
 const notesArr = ctx.notes as SingleNote[]
