@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# MyNotes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Witaj w MyNotes, przeglądarkowej aplikacji, dzięki której z łatwością będziesz mógł/mogła zarządzać swoimi notatkami. 
 
-## Available Scripts
+MyNotes znajdziesz pod tym linkiem: [https://venerable-khapse-b096b3.netlify.app/](https://64c55ee006b69b164c3f90e9--dashing-llama-c3e475.netlify.app/)
 
-In the project directory, you can run:
+## Strona startowa
 
-### `npm start`
+Po uruchomieniu aplikacji zostaniemy przekierowani do strony startowej, na której widnieje logo MyNotes oraz dwa przyciski - jeden do dodawania nowej notatki oraz drugi, służący do usuwania wszystkich notatek. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img width="1238" alt="image" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/1ae6a393-79b0-4886-b518-73bf3f57cc53">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Dodawanie nowej notatki 
 
-### `npm run build`
+Aby dodać nową notatkę, kliknij w przycisk "Dodaj notatkę". 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/74069c1b-565b-4dd0-9851-6f7656ddd34c)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Następnie w formularzu wybierz kategorię notatki (do wyboru są trzy: Praca, Dom i Inne) oraz wpisz jej treść. W zależności od kategorii dodanej notatki, będzie ona miała inny kolor. 
 
-### `npm run eject`
+<img width="1258" alt="Zrzut ekranu 2023-07-29 o 21 33 19" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/4137f3f5-de4b-422d-bea3-a6231d803d3a">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Jeśli udało Ci się poprawnie dodać notatkę, powinna ona pojawić się na głównej stronie
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="1257" alt="Zrzut ekranu 2023-07-29 o 21 33 43" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/0ae54827-dc06-4b19-8bcd-74a8cede4f0f">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+W przypadku jeśli zapomnisz wybrać kategorię lub wpisać treść notatki, formularz przypomni Ci o tym prosząc o uzupełnienie wszystkich pól formularza 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img width="1235" alt="image" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/b2715618-5d65-45de-8957-d9a256eccfb2">
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Edytowanie notatek 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+W celu zmiany treści notatki, kliknij w ikonkę ołówka znajdującą się w prawym górnym rogu notatki. Wyświetli się formularz, który służy do zmiany treści wybranej notatki. 
+
+<img width="1254" alt="image" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/e120035b-9a94-418a-b3da-2b6a2619ede1">
+
+
+<img width="1260" alt="image" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/ef021b50-24ec-4c12-a2e3-5e6a658fe42d">
+
+### Usuwanie notatek 
+
+Notaki w MyNotes możemy usunąć na dwa sposoby. Aby skasować pojedynczą notatkę, wystarczy kliknąć w ikonkę krzyżyka, znajdującą się w prawym górnym rogu notatki. Po kliknięciu w krzyżyk notatka zostanie usunięta z aplikacji. 
+
+<img width="1251" alt="image" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/34953768-1310-406a-ba42-1dcccfef2583">
+
+
+Drugim sposobem na usunięcie notatek jest przycisk "Usuń notatki" znajdujący się w prawym górnym rogu strony. Pamiętaj jednak, że przycisk ten odpowiada za usunięcie wszystkich notatek. 
+
+<img width="1241" alt="image" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/3830a519-e50f-48c0-99fa-11bb65c46e81">
+
+
+Dlatego też, zanim notatki zostaną usunięte ze strony, aplikacja poprosi o potwierdzenie Twojej decyzji. Po kliknięciu w przycisk "Usuń" notatki zostaną usunięte ze strony. Jeśli jednak chcesz je zatrzymać, wystarczy kliknąć "Anuluj"
+<img width="1262" alt="image" src="https://github.com/barteek-poz/MyNotes-React-Typescript/assets/109816351/68230719-0d56-43f4-8c28-2a49ac8d4105">
+
+### Zapisywanie notatek w pamięci przeglądarki 
+
+MyNotes zapisuje Twoje notatki w pamięci przeglądarki, więc będą one dostępne dla Ciebie nawet po odświeżeniu strony lub chwilowej utracie połączenia z siecią. 
