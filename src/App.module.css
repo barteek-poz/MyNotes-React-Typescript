@@ -26,3 +26,8 @@ html {
     padding: 3rem;
 }
 
+@media (max-width: 37.5rem) {
+    html {
+        font-size: 50%;
+    }
+}

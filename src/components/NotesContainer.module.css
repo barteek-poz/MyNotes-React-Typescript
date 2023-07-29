@@ -3,4 +3,12 @@
     gap: 3rem;
     list-style: none;
     flex-wrap: wrap;
+    overflow: scroll;
+}
+
+@media (max-width:28.125rem) {
+.note-container {
+    align-items: center;
+    justify-content: center;
+}
 }

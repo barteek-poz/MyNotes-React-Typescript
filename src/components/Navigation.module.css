@@ -1,26 +1,39 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .buttons {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-right: 3rem;
-    
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.icon {
+  font-size: 3rem;
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--dark-font);
+  color: var(--light-background);
+  transform: translateY(2px);
 }

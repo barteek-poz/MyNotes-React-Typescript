@@ -2,15 +2,17 @@ import { FaNoteSticky } from "react-icons/fa6";
 import styles from "./Navigation.module.css";
 import Button from "./Button";
 import AddNoteModal from "./AddNoteModal";
-import { useContext, useState } from "react";
-import { NotesContext } from "../context/NotesContext";
+import { useState } from "react";
 import ConfirmModal from "./ConfirmModal";
+import { useMediaPredicate } from "react-media-hook";
+import { BiPlus } from "react-icons/bi";
+import { MdDelete } from "react-icons/md";
 
 const Navigation: React.FC<{}> = () => {
-const ctx = useContext(NotesContext)
+  const screenBiggerThan500 = useMediaPredicate("(min-width:500px)");
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [deleteNotes, setDeleteNotes] = useState(false)
+  const [deleteNotes, setDeleteNotes] = useState(false);
 
   const addNoteHandler = () => {
     setModalIsOpen(true);
@@ -18,12 +20,12 @@ const ctx = useContext(NotesContext)
 
   const closeNoteModalHandler = () => {
     setModalIsOpen(false);
-    setDeleteNotes(false)
+    setDeleteNotes(false);
   };
 
   const deleteNotesHandler = () => {
-setDeleteNotes(true)
-  }
+    setDeleteNotes(true);
+  };
 
   return (
     <nav className={styles.nav}>
@@ -31,11 +33,14 @@ setDeleteNotes(true)
         <FaNoteSticky /> <h1>MyNotes</h1>
       </div>
       <div className={styles.buttons}>
-        <Button onClick={addNoteHandler}>Dodaj notatkę</Button>
-        <Button onClick={deleteNotesHandler}>Usuń notatki</Button>
+       {screenBiggerThan500 && <Button onClick={addNoteHandler}>Dodaj notatkę</Button>}
+        {screenBiggerThan500 && <Button onClick={deleteNotesHandler}>Usuń notatki</Button>}
+        {!screenBiggerThan500 && <BiPlus className={styles.icon} onClick={addNoteHandler}/>}
+        {!screenBiggerThan500 && <MdDelete  className={styles.icon} onClick={deleteNotesHandler} />}
+
       </div>
       {modalIsOpen && <AddNoteModal onClose={closeNoteModalHandler} />}
-      {deleteNotes&& <ConfirmModal onCloseModal={closeNoteModalHandler}/>}
+      {deleteNotes && <ConfirmModal onCloseModal={closeNoteModalHandler} />}
     </nav>
   );
 };

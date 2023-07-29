@@ -10,5 +10,5 @@
 .button:hover {
     background-color: var(--dark-font);
     color: var(--light-background);
-   
+    transform: translateY(2px);
 }
