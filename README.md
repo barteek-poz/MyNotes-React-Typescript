@@ -2,7 +2,7 @@
 
 Witaj w MyNotes, przeglądarkowej aplikacji, dzięki której z łatwością będziesz zarządzać swoimi notatkami. 
 
-MyNotes znajdziesz pod tym linkiem: [https://venerable-khapse-b096b3.netlify.app/](https://64c55ee006b69b164c3f90e9--dashing-llama-c3e475.netlify.app/)
+MyNotes znajdziesz pod tym linkiem: https://dashing-llama-c3e475.netlify.app/
 
 ## Strona startowa
 
