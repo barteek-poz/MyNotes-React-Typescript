@@ -18,11 +18,11 @@ export const ModalOverlay: React.FC<{ onCloseModal: () => void }> = (props) => {
 
   return (
     <div className={styles["modal-body"]} id="edit-modal-body">
-      <h3>Potwierdzenie</h3>
-      <p>Czy na pewno chcesz usunąć notatki?</p>
+      <h3>Confirmation</h3>
+      <p>Are you sure you want to delete the notes?</p>
       <div className={styles.buttons}>
-        <Button onClick={deleteNotes}>Usuń</Button>
-        <Button onClick={props.onCloseModal}>Anuluj</Button>
+        <Button onClick={deleteNotes}>Delete</Button>
+        <Button onClick={props.onCloseModal}>Cancel</Button>
       </div>
     </div>
   );
