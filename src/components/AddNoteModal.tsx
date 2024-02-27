@@ -11,9 +11,9 @@ interface options {
 }
 
 const selectOptions: options[] = [
-  { value: "work", label: "Praca" },
-  { value: "home", label: "Dom" },
-  { value: "others", label: "Inne" },
+  { value: "work", label: "Work" },
+  { value: "home", label: "Home" },
+  { value: "others", label: "Others" },
 ];
 
 export const Backdrop: React.FC<{}> = () => {
@@ -51,24 +51,24 @@ export const ModalOverlay: React.FC<{ onClose: () => void }> = (props) => {
 
   return (
     <div className={styles["modal-body"]}>
-      <h3>Dodaj notatkę</h3>
-      <label htmlFor="categories">Wybierz kategorię</label>
+      <h3>Add note</h3>
+      <label htmlFor="categories">Select category</label>
       <Select
         id="categories"
         className={styles.select}
         options={selectOptions}
-        placeholder={"Wybierz kategorie"}
+        placeholder={"Select category"}
         onChange={selectOptionHandler}
         value={selectedOption}
       />
-      <label htmlFor="text">Wpisz treść notatki</label>
+      <label htmlFor="text">Add text</label>
       <textarea id="text" className={styles.textarea} ref={noteRef}></textarea>
       <p className={styles.error}>
-        {formInvalid && "Uzupełnij wszystkie pola"}
+        {formInvalid && "Fill all input fields"}
       </p>
       <div className={styles.buttons}>
-        <Button onClick={addNoteHandler}>Zapisz</Button>
-        <Button onClick={props.onClose}>Anuluj</Button>
+        <Button onClick={addNoteHandler}>Save</Button>
+        <Button onClick={props.onClose}>Cancel</Button>
       </div>
     </div>
   );
