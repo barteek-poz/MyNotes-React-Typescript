@@ -33,8 +33,8 @@ const Navigation: React.FC<{}> = () => {
         <FaNoteSticky /> <h1>MyNotes</h1>
       </div>
       <div className={styles.buttons}>
-       {screenBiggerThan500 && <Button onClick={addNoteHandler}>Dodaj notatkę</Button>}
-        {screenBiggerThan500 && <Button onClick={deleteNotesHandler}>Usuń notatki</Button>}
+       {screenBiggerThan500 && <Button onClick={addNoteHandler}>Add note</Button>}
+        {screenBiggerThan500 && <Button onClick={deleteNotesHandler}>Delete all notes</Button>}
         {!screenBiggerThan500 && <BiPlus className={styles.icon} onClick={addNoteHandler}/>}
         {!screenBiggerThan500 && <MdDelete  className={styles.icon} onClick={deleteNotesHandler} />}
 
