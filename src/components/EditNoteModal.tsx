@@ -33,12 +33,12 @@ export const ModalOverlay: React.FC<{
 
   return (
     <div className={styles["modal-body"]} id="edit-modal-body">
-      <h3>Edytuj notatkę</h3>
+      <h3>Edit note</h3>
       <textarea id="edit-modal-textarea" defaultValue={props.text} ref={editedNoteRef}></textarea>
-      {error && <p className={styles.error}>Notatka nie może być pusta</p>}
+      {error && <p className={styles.error}>The note cannot be empty</p>}
       <div className={styles.buttons}>
-        <Button onClick={editNoteHandler}>Zapisz</Button>
-        <Button onClick={closeModal}>Anuluj</Button>
+        <Button onClick={editNoteHandler}>Save</Button>
+        <Button onClick={closeModal}>Cancel</Button>
       </div>
     </div>
   );
