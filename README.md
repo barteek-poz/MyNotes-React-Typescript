@@ -2,7 +2,7 @@
 
 Witaj w MyNotes, przeglądarkowej aplikacji, dzięki której z łatwością będziesz zarządzać swoimi notatkami. 
 
-MyNotes znajdziesz pod tym linkiem: https://dashing-llama-c3e475.netlify.app/
+MyNotes znajdziesz pod tym linkiem: [https://dashing-llama-c3e475.netlify.app/](https://react-mynotes.netlify.app/)
 
 ## Strona startowa
 
